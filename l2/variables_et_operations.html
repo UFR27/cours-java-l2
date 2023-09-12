@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Variables &#8212; Documentation Cours Initiation à la POO L2 MIASHS Université Paris 1 </title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=3b36ad44"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="Caractéristiques du langage Java" href="premiere_classe.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="variables">
+<h1>Variables<a class="headerlink" href="#variables" title="Lien permanent vers cette rubrique">¶</a></h1>
+<section id="declaration-et-initialisation">
+<h2>Déclaration et initialisation<a class="headerlink" href="#declaration-et-initialisation" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Comme dit précédemment, les variables doivent toujours être déclarée.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Lors de la déclaration de variables, si aucune initialisation n’est faite, une valeur par défaut est assignée automatiquement</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">//x vaudra 0</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">//y vaudra 5 </span>
+</pre></div>
+</div>
+</section>
+<section id="les-types-de-variables">
+<h2>Les types de variables<a class="headerlink" href="#les-types-de-variables" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Les variables peuvent être de différent types:</p>
+<ul class="simple">
+<li><p>les types primitifs: ce sont les types fondamentaux de tous langage de programmation. Leur liste est:</p>
+<ul>
+<li><p>boolean : un variable booléenne peut être soit vrai soit faux (true or false)</p></li>
+<li><p>char: un caractère</p></li>
+<li><p>byte: un octet de 8 bits: <code class="docutils literal notranslate"><span class="pre">0x01010101</span></code>,  <code class="docutils literal notranslate"><span class="pre">0x00000001</span></code>, <code class="docutils literal notranslate"><span class="pre">0x10000000</span></code></p></li>
+<li><p>short: un entier de petite taille, compris dans [-32768;32767]</p></li>
+<li><p>int: un entier de taille normale, compris dans [-2147483648;2147483647]</p></li>
+<li><p>long un gros entier [-9223372036854775808,9223372036854775807]</p></li>
+<li><p>float: un numbre à virgule normal dans [-3.40E38;3.40E38]</p></li>
+<li><p>double: un gros numbre à virgule dans [-1.8E308;1.8E308]</p></li>
+</ul>
+</li>
+<li><p>les types Objets: sont sont tous les autres</p></li>
+</ul>
+<iframe src="https://java.miage.dev?gistId=4473c2d4e06dd1569c16785f413d0fb6" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="utilisation-des-variables-de-type-primitif">
+<h2>Utilisation des variables de type primitif<a class="headerlink" href="#utilisation-des-variables-de-type-primitif" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Les variables de types primitifs peuvent être utilisées pour réaliser des opérations arithmétiques.</p>
+<section id="exo-1">
+<h3>Exo 1<a class="headerlink" href="#exo-1" title="Lien permanent vers cette rubrique">¶</a></h3>
+<iframe src="https://java.miage.dev?gistId=43a87ac01506876e53a4fe50a59088e4" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="exo-2">
+<h3>Exo 2<a class="headerlink" href="#exo-2" title="Lien permanent vers cette rubrique">¶</a></h3>
+<iframe src="https://java.miage.dev?gistId=ce2992ecbd3311e48e30bce2131740b9" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+</section>
+</section>
+<section id="les-fonctions-et-les-conditions">
+<h1>Les fonctions et les conditions<a class="headerlink" href="#les-fonctions-et-les-conditions" title="Lien permanent vers cette rubrique">¶</a></h1>
+<section id="les-fonctions">
+<h2>Les fonctions<a class="headerlink" href="#les-fonctions" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Les fonctions prennent entre 0 et n arguments et retournent 0 ou 1 valeur. La signature de la fonction est:</p>
+<p><code class="docutils literal notranslate"><span class="pre">type_retour</span> <span class="pre">nom_fonction(type_arg1</span> <span class="pre">arg1,</span> <span class="pre">type_arg2</span> <span class="pre">arg2,</span> <span class="pre">....)</span></code></p>
+<p>pour appeller une fonction, il suffit de taper <code class="docutils literal notranslate"><span class="pre">nom_fonction(value1,</span> <span class="pre">value2)</span></code></p>
+<iframe src="https://java.miage.dev?gistId=854826874a588fb41e3bcbc6feafc03f" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="les-conditions">
+<h2>Les conditions<a class="headerlink" href="#les-conditions" title="Lien permanent vers cette rubrique">¶</a></h2>
+<section id="le-if">
+<h3>Le IF<a class="headerlink" href="#le-if" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Le If permet de choisir le déroulement de l’exécution des fonctions conditionnellement au résultat d’une opération:</p>
+<p>la sytaxe est la suivante:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">condition1</span><span class="p">){</span>
+<span class="w"> </span><span class="c1">// code exécuté si la condition est vraie</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">condition2</span><span class="p">){</span>
+<span class="w"> </span><span class="c1">//code exécuté si la condition 1 est fausse et que la condition 2 est vraie</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">condition3</span><span class="p">){</span>
+<span class="w"> </span><span class="c1">//code exécuté si les condition 1 et 2 sont fausse et que la condition 3 est vraie</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="p">{</span>
+<span class="w">    </span><span class="c1">//code exécuté si aucune  condition n&#39;est vraie</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<section id="exo1">
+<h4>Exo1<a class="headerlink" href="#exo1" title="Lien permanent vers cette rubrique">¶</a></h4>
+<iframe src="https://java.miage.dev?gistId=22298637dbd97048ee2c5cde9b1f3e1a" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="id1">
+<h4>Exo 2<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">¶</a></h4>
+<iframe src="https://java.miage.dev?gistId=06a437d879687d4d585979fcc94ec4da" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="exo-3">
+<h4>Exo 3<a class="headerlink" href="#exo-3" title="Lien permanent vers cette rubrique">¶</a></h4>
+<iframe src="https://java.miage.dev?gistId=b3d38a5c65a06307a2d51aa2699666fd" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+<section id="exo-4">
+<h4>Exo 4<a class="headerlink" href="#exo-4" title="Lien permanent vers cette rubrique">¶</a></h4>
+<iframe src="https://java.miage.dev?gistId=4e3fa165063d5c2db6cb38ca272fa82d" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</section>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Cours Initiation à la POO L2 MIASHS Université Paris 1</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="premiere_classe.html">Caractéristiques du langage Java</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Variables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#declaration-et-initialisation">Déclaration et initialisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-types-de-variables">Les types de variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#utilisation-des-variables-de-type-primitif">Utilisation des variables de type primitif</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#les-fonctions-et-les-conditions">Les fonctions et les conditions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#les-fonctions">Les fonctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-conditions">Les conditions</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="premiere_classe.html" title="Chapitre précédent">Caractéristiques du langage Java</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nicolas Herbaut.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/l2/variables_et_operations.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

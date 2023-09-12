@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Caractéristiques du langage Java &#8212; Documentation Cours Initiation à la POO L2 MIASHS Université Paris 1 </title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=3b36ad44"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/translations.js?v=d99ca74e"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Variables" href="variables_et_operations.html" />
+    <link rel="prev" title="Cours Initiation à la POO L2 MIASHS Université Paris 1" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="caracteristiques-du-langage-java">
+<h1>Caractéristiques du langage Java<a class="headerlink" href="#caracteristiques-du-langage-java" title="Lien permanent vers cette rubrique">¶</a></h1>
+<section id="modele-de-typage-de-java">
+<h2>Modèle de typage de Java<a class="headerlink" href="#modele-de-typage-de-java" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Java à deux propriétés qui le diffèrencie fortement de Python:</p>
+<ul class="simple">
+<li><p>fortement typée: il faut déclarer les variables et leur donner un type</p></li>
+<li><p>à typage statique: le type d’une variable restera toujours le même pendant sa durée de vie</p></li>
+</ul>
+<p>Exemple python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">j</span><span class="o">=</span><span class="s2">&quot;string&quot;</span> <span class="c1"># ici le type de j est déterminé lors de l&#39;affectation</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span> <span class="c1">#ici i est utilisée sans avoir été déclarée</span>
+    <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="mi">2</span>  <span class="c1">#ici j est affectée sans avoir été déclarée</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="c1">#j=18</span>
+</pre></div>
+</div>
+<p>l’équivalent en Java:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// ici j est définie comme un entier, il le restera toute sa vie</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span><span class="w"> </span><span class="c1">//ici j est définie comme un entier, il le restera tant qu&#39;on est dans la boucle for</span>
+<span class="w">    </span><span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">j</span><span class="p">);</span><span class="w"> </span><span class="c1">//ici on  au</span>
+</pre></div>
+</div>
+</section>
+<section id="paradigme-de-programmation-java">
+<h2>Paradigme de programmation JAVA<a class="headerlink" href="#paradigme-de-programmation-java" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Java est un language de programmation impératif (composé d’instructions) et multi-paradigme (c’est à dire qui supporte différentes façons de coder la même chose):</p>
+<ul class="simple">
+<li><p><em>La programmation orientée Objet</em>: regroupe le code et les données au même endroit dans un concept appellé <strong>Classes</strong></p></li>
+<li><p><em>La programmation fonctionnelle</em>: considère les opérations comme des suites de fonctions dont les sorties sont les entrées d’autres fonctions</p></li>
+<li><p><em>Reactif</em>: les flux de données peuvent être traités de façon séquentielle et en temps réel par rapport à leur utilisation</p></li>
+</ul>
+<section id="les-caracteristiques-communes-des-etudiants">
+<h3>Les caractéristiques communes des étudiants<a class="headerlink" href="#les-caracteristiques-communes-des-etudiants" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Les classes permettent de structurer vos programmes de la même façon que votre cerveau appréhende le monde existant. Lorsque je vois un groupe d’étudiant, mon cerveau, instinctivement comprends que ceux-ci ont des caractéristiques communes (comme tous les étudiants):</p>
+<ul class="simple">
+<li><p>ils ont tous un numéro étudiants</p></li>
+<li><p>ils peuvent apprendre</p></li>
+<li><p>en temps qu’enseignant je peux leur donner des notes</p></li>
+</ul>
+<p><img alt="" src="../_images/students_generalisation.png" /></p>
+</section>
+<section id="naissance-de-la-classe-des-etudiants">
+<h3>Naissance de la classe des étudiants<a class="headerlink" href="#naissance-de-la-classe-des-etudiants" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Je regroupe toutes les caractéristiques des étudiants, sous forme d’un concept abstrait appellé <code class="docutils literal notranslate"><span class="pre">classe</span></code></p>
+<p><img alt="généralisation des caractéristiques des étudiants sous forme de classe" src="../_images/student_class.png" /></p>
+<p>Une classe comporte 2 types d’information:</p>
+<ul class="simple">
+<li><p>les attributs (les données, des variables qui sont propres à chaque objet)</p></li>
+<li><p>les méthodes (le code exécuté, qui est exécuté de la même manière pour chaque étudiant)</p></li>
+</ul>
+</section>
+<section id="abstraction-supplementaire-avec-les-professeurs">
+<h3>Abstraction supplémentaire avec les professeurs<a class="headerlink" href="#abstraction-supplementaire-avec-les-professeurs" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Si je vois un collègue enseignant, je sais également qu’il fait parti de la « classe » des enseignants et que je peux le tutoyer, lui demander quels sont ses sujets de recherche et les cours qu’il donne (comme tous les enseignants).</p>
+<p>Je vois également qu’un enseignant et qu’un étudiant ont des caractéristiques communes: ils ont tous les deux un num et un numéro d’identifiant dans l’université</p>
+<p><img alt="" src="../_images/generalisation.png" /></p>
+<p>On voit donc qu’il exsite un concept <em>plus abstrait</em> dans notre modèle <code class="docutils literal notranslate"><span class="pre">Usager</span> <span class="pre">de</span> <span class="pre">l'université</span></code> qui regroupes les caractéristiques communes des deux classes.</p>
+<iframe src="https://java.miage.dev?gistId=bc7f9ba62a13d1eb9df8a223f8f85bac" width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Cours Initiation à la POO L2 MIASHS Université Paris 1</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Caractéristiques du langage Java</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modele-de-typage-de-java">Modèle de typage de Java</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#paradigme-de-programmation-java">Paradigme de programmation JAVA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variables_et_operations.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables_et_operations.html#les-fonctions-et-les-conditions">Les fonctions et les conditions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="Chapitre précédent">Cours Initiation à la POO L2 MIASHS Université Paris 1</a></li>
+      <li>Next: <a href="variables_et_operations.html" title="Chapitre suivant">Variables</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nicolas Herbaut.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/l2/premiere_classe.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
